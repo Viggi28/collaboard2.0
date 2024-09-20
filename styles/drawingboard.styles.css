@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.hidden {
+    transform: translateX(-100%);
+  }
+  
+  .hideButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .tools {
+    margin-top: 20px;
+  }
+  
+  .tools h4 {
+    margin-bottom: 10px;
+  }
+  
+  .tools div {
+    margin-bottom: 15px;
+  }
+  
+  .inputColor {
+    border: none;
+    padding: 5px;
+  }
+  
+  .inputRange {
+    width: 100%;
+  }
+  
+  .button {
+    padding: 10px;
+    border: none;
+    background-color: #0070f3;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .button:hover {
+    background-color: #005bb5;
+  }
+  
+  .canvas {
+    flex-grow: 1;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    cursor: crosshair;
+    margin: 0;
+    padding: 0;
+  }
+  
